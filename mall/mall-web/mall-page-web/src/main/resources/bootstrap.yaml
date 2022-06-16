@@ -1,0 +1,29 @@
+server:
+  port: 8086
+spring:
+  application:
+    name: mall-web-page
+  cloud:
+    nacos:
+      config:
+        file-extension: yaml
+        server-addr: 192.168.100.130:8848
+      discovery:
+        #Nacos的注册地址
+        server-addr: 192.168.100.130:8848
+  thymeleaf:
+    cache: false
+    encoding: UTF-8
+
+  main:
+    allow-bean-definition-overriding: true
+#页面生成存储路径
+pagepath: D:/Project/Codes/SpringCloud/items/
+
+#秒杀静态页
+seckillpath: D:/Project/Codes/SpringCloud/seckillitems/
+
+#日志配置
+logging:
+  pattern:
+    console: "%msg%n"

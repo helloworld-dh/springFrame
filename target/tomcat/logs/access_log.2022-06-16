@@ -1,0 +1,4 @@
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:16:38:17 +0800] "GET /simpleframework/hello HTTP/1.1" 200 187 http-bio-8080-exec-2 647
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:16:38:17 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:22:48:09 +0800] "GET /simpleframework/hello HTTP/1.1" 200 190 http-bio-8080-exec-1 163
+0:0:0:0:0:0:0:1 - - [16/Jun/2022:22:48:09 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8080-exec-3 0
