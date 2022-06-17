@@ -22,6 +22,22 @@ import java.io.IOException;
 public class HelloServlet extends HttpServlet {
 
     @Override
+    public void destroy() {
+        System.out.println("Destroy。。。。");
+    }
+
+    @Override
+    public void init() throws ServletException {
+        System.out.println("初始化Servlet。。。。。");
+    }
+
+    @Override
+    protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException{
+        System.out.println("执行了doget方法");
+        doGet(req,resp);
+    }
+
+    @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String name = "spring的简易框架";
         log.debug("name is "+name);
