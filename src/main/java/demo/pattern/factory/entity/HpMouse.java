@@ -1,5 +1,7 @@
 package demo.pattern.factory.entity;
 
+import demo.annotation.TestAnnotation;
+
 /**
  * @ClassName: HpMouse
  * @Description:
@@ -9,6 +11,7 @@ package demo.pattern.factory.entity;
 public class HpMouse implements Mouse{
 
     @Override
+    @TestAnnotation
     public void sayHi() {
         System.out.println("惠普鼠标");
     }
