@@ -4,6 +4,9 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.io.FileFilter;
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Field;
+import java.lang.reflect.InvocationTargetException;
 import java.net.URL;
 import java.util.HashSet;
 import java.util.Set;
@@ -114,6 +117,42 @@ public class ClassUtil {
     public static ClassLoader getClassLoader(){
         return Thread.currentThread().getContextClassLoader();
     }
+
+    /**
+     *   类的实例化(无参构造)
+     * @param clazz
+     * @param <T>
+     * @param <accessible>
+     * @return
+     */
+    public static <T> T newInstance(Class<?> clazz, boolean accessible){
+        try {
+            Constructor constructor = clazz.getDeclaredConstructor();
+            constructor.setAccessible(accessible);
+            return (T)constructor.newInstance();
+        } catch (Exception e) {
+            log.error("newInstance error",e);
+            throw new RuntimeException();
+        }
+    }
+
+    /**
+     * 设置类的属性值
+     * @param field  成员变量
+     * @param target  类实例
+     * @param value  成员变量的值
+     * @param accessible  是否允许设置私有属性
+     */
+    public static void setField(Field field, Object target, Object value, boolean accessible){
+        field.setAccessible(accessible);
+        try {
+            field.set(target,value);
+        } catch (IllegalAccessException e) {
+            log.error("setField error",e);
+            throw new RuntimeException(e);
+        }
+    }
+
 
     public static void main(String[] args) {
         extractPackageClass("com.it.entity");
