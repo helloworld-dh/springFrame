@@ -171,3 +171,87 @@
             IOC容器的singletonObject属性中
     FactoryBean：是一个bean，存放在BeanFactory中。具有工厂方法的功能，在程序运行中产生指定类型的bean，并添加到了IOC容器中的
             factoryBeanObjectCache中
+
+##PostProcessor
+
+    本身也是一种需要注册到容器里的bean
+    其里面的方法会在特定的时机被容器调用
+    实现不改变容器或者Bean核心逻辑的情况下对Bean进行扩展
+    对Bean进行包装，影响其行为，修改Bean的内容
+    
+    大致分未容器级别的后置处理器以及Bean级别的后置处理器
+        BeanDefinitionRegistryPostProcessor：允许在BeanFactoryPostProcessor检测开始之间注册更多的自定义beanDefinition
+        BeanFactoryPostProcessor：在初始化之后修改上下文(容器)的内部beanFactory
+        BeanPostProcessor
+        
+##Aware
+    
+    从Bean里获取到的容器实例并对其进行操作
+    
+##事件监听器模式
+    
+    监听器将监听感兴趣的事件，一旦事件发生，便做出响应
+        事件源
+        事件监听器
+        事件对象 事件源和事件监听器之间的信息传递
+    
+    回调函数：往组件注册自定义的方法以便组件在特定场景下调用
+    
+    Spring的事件驱动模型
+        事件驱动模型的三大组成部分
+            事件：ApplicationEvent抽象类
+            事件监听器：EventListener
+            事件发布器：Publisher以及Multicaster
+            
+##refresh方法
+
+    preareRefresh：刷新前的工作准备
+        获取容器的当前事件，同时给容器设置同步标识
+    obtainFreshBeanFactory：获取子类刷新后的内部beanFactory实例
+        告诉子类启动refreshBeanFactory()方法，Bean定义资源文件的载入从子类的refreshBeanFactory()方法启动，里面有抽象方法，针对
+        xml配置，最终创建内部容器，该容器负责Bean的创建与管理，进行BeanDefinition的注册
+    prepareBeanFactory：为容器注册必要的系统级别的Bean
+        注册一些容器中需要的系统bean，例如classloader,beanfactoryPostProcessor等
+    postProcessBeanFactory：允许容器的子类去注册postProcessor
+    invokeBeanFactoryPostProcessor：调用容器注册的容器级别的后置处理器
+        激活在容器中注册为bean的BeanFactoryPostProcessors，扫描所有的BeanDefintition并注册到容器之中
+    registerBeanPostProcessor：向容器注册Bean级别的后置处理器
+        注册拦截bean创建过程的BeanPostProcessor
+    initMessageSorce：初始化国际化配置
+    initApplicationEventMulticaster：初始化事件发布者组件
+        初始化ApplicationEventMulticaster该类作为事件发布者，可以存储所有事件监听者信息，并根据不同的事件，通知不同的事件监听者
+    onRefresh:在单例Bean初始化之前预留给子类初始化其他特殊bean
+    registerListeners：向前面的事件发布者组件注册事件监听者
+        注册监听器，检查监听器的bean并注册它们
+    finishBeanFactoryInitialization：设置系统级别的服务，实例化所有非懒加载的实例
+    finishRefresh:触发初始化完成的回调方法，并发布容器刷新完成的事件给监听者
+    resetCommonCaches：重置Spring内核中的共用缓存
+    
+##依赖注入
+
+    AbstractBeanFactory--->doGetBean：获取Bean实例
+        尝试从缓存获取Bean
+        循环依赖的判断
+        如果当前容器没有该Bean的BeanDefinition，递归去父容器获取Bean实例
+        从当前容器获取BeanDefinition实例
+        递归实例化显示依赖的Bean
+        根据不同的Scope采用不同的册罗创建Bean实例
+        对Bean进行类型检查
+    DefaultSingletonRegistry：
+        getSingleton：获取单例实例
+        三级缓存：解决循环依赖
+    AbstractAutowireCapableBeanFactory：
+        createBean:创建Bean实例的准备
+        doCreateBean：创建Bean实例
+            创建Bean实例(工厂方法，含参构造器注入，无参构造去注入)
+            记录下被@Autowired或者@Value标记上的方法和成员变量
+            是否允许提前暴漏
+            填充Bean属性
+            initializeBean
+            注册相关销毁逻辑
+            返回创建好的实例
+        applyMergeedBeanDefinitionProcessors：处理@Autowired以及@Value注解
+        populateBean：给Bean实例注入属性值(依赖注入)
+    AutowiredAnnotationBeanPostProcessor：postProcessProperties-->Autowired的依赖注入逻辑
+    DefaultListableBeanFactory:doResolveDependency：依赖解析
+    DependencyDescriptor：injectionPoint：创建依赖实例
