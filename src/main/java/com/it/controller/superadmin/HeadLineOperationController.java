@@ -3,6 +3,9 @@ package com.it.controller.superadmin;
 import com.it.entity.bo.HeadLine;
 import com.it.entity.dto.Result;
 import com.it.service.solo.HeadLineService;
+import com.it.service.solo.impl.HeadLineServiceImpl;
+import org.simpleframework.core.annotation.Controller;
+import org.simpleframework.inject.annotation.Autowired;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +17,9 @@ import java.util.List;
  * @Author: Du
  * @Date: 2022/6/17
  */
+@Controller
 public class HeadLineOperationController {
+    @Autowired(value = "HeadLineServiceImpl")
     private HeadLineService headLineService;
 
     //添加头条

@@ -23,19 +23,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f1e9daea-37e5-44d8-be3f-7ccbe4509634" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/annotation/AnnotationDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/annotation/AnnotationParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/annotation/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/annotation/CourseInfoAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/annotation/PersonInfoAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/annotation/TestAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/annotation/TypeParameterAnnotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/demo/annotation/TypeParameterDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/aspect/ControllerInfoRecordAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/aspect/ControllerTimeCalculatorAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/aspect/ServiceInfoRecordAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/it/aspect/ServiceTimeCalculatorAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/aop/AspectListExecutor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/aop/AspectWeaver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/aop/PointcutLocator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/aop/ProxyCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/aop/annotation/Aspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/aop/annotation/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/aop/aspect/AspectInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/aop/aspect/DefaultAspect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/simpleframework/aop/AspectListExecutorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/simpleframework/aop/AspectWeaverTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/simpleframework/aop/mock/Mock1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/simpleframework/aop/mock/Mock2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/simpleframework/aop/mock/Mock3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/simpleframework/aop/mock/Mock4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/org/simpleframework/aop/mock/Mock5.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/simpleframework_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/simpleframework_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_4_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jsp_javax_servlet_jsp_api_2_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_6_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_6_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_18_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pattern/factory/entity/HpMouse.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pattern/factory/entity/HpMouse.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/demo/pattern/factory/entity/HpMouse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/demo/pattern/factory/entity/HpMouse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/simpleframework.iml" beforeDir="false" afterPath="$PROJECT_DIR$/simpleframework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/controller/frontend/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/controller/frontend/MainPageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/controller/superadmin/HeadLineOperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/controller/superadmin/HeadLineOperationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/controller/superadmin/ShopCategoryOperationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/controller/superadmin/ShopCategoryOperationController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/service/combine/impl/HeadLineShopCategoryCombineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/service/combine/impl/HeadLineShopCategoryCombineServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/service/combine/impl/HeadLineShopCategoryCombineServiceImpl2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/service/combine/impl/HeadLineShopCategoryCombineServiceImpl2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/service/solo/impl/HeadLineServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/service/solo/impl/HeadLineServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/it/service/solo/impl/ShopCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/it/service/solo/impl/ShopCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pattern/callback/CallbackDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pattern/callback/CallbackDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/ProxyDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/ProxyDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/ToBPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/ToBPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/ToCPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/ToCPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/impl/AlipayToB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/impl/AlipayToB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/impl/AlipayToC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/impl/AlipayToC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/impl/CommonPayment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/impl/CommonPayment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/impl/ToBPaymentImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/impl/ToBPaymentImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/impl/ToCPaymentImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/demo/pattern/proxy/impl/ToCPaymentImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/simpleframework/core/BeanContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/core/BeanContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/simpleframework/inject/DependencyInjector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/inject/DependencyInjector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/simpleframework/inject/annotation/Autowired.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/inject/annotation/Autowired.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/simpleframework/util/ClassUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/util/ClassUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/simpleframework/util/ValidationUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/simpleframework/util/ValidationUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/simpleframework/core/BeanContainerClassTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/simpleframework/core/BeanContainerClassTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/simpleframework/inject/DependencyInjectorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/simpleframework/inject/DependencyInjectorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/org/simpleframework/util/ClassUtilTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/org/simpleframework/util/ClassUtilTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/it/controller/frontend/MainPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/it/controller/frontend/MainPageController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/it/controller/superadmin/HeadLineOperationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/it/controller/superadmin/HeadLineOperationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/it/controller/superadmin/ShopCategoryOperationController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/it/controller/superadmin/ShopCategoryOperationController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/it/service/combine/impl/HeadLineShopCategoryCombineServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/it/service/combine/impl/HeadLineShopCategoryCombineServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/it/service/solo/impl/HeadLineServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/it/service/solo/impl/HeadLineServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/it/service/solo/impl/ShopCategoryServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/it/service/solo/impl/ShopCategoryServiceImpl.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +109,7 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="D:\Project\apache-maven-3.6.3-bin\apache-maven-3.6.3\m2" />
+        <option name="localRepository" value="D:\Project\apache-maven-3.6.3-bin\apache-maven-3.6.3\repository" />
         <option name="mavenHome" value="D:\Project\IntelliJ IDEA 2020.2\plugins\maven\lib\maven3" />
         <option name="userSettingsFile" value="D:\Project\apache-maven-3.6.3-bin\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
@@ -76,17 +128,30 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/java/demo/api/assignable" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.runner" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
-  <component name="RunManager" selected="Application.AnnotationParser">
-    <configuration name="AnnotationDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.annotation.AnnotationDemo" />
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="org.simpleframework.inject" />
+      <recent name="org.simpleframework" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.it.aspect" />
+      <recent name="org.simpleframework.aop.mock" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Project\Codes\springFrame\src\main\java\demo\api\assignable" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.AspectWeaverTest.doAopTest">
+    <configuration name="CallbackDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.pattern.callback.CallbackDemo" />
       <module name="simpleframework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.annotation.*" />
+          <option name="PATTERN" value="demo.pattern.callback.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -94,13 +159,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AnnotationParser" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.annotation.AnnotationParser" />
+    <configuration name="EventModeDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.pattern.eventmode.EventModeDemo" />
       <module name="simpleframework" />
-      <option name="VM_PARAMETERS" value="-Djdk.proxy.ProxyGenerator.saveGeneratedFiles=true -XX:+TraceClassLoading" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.annotation.*" />
+          <option name="PATTERN" value="demo.pattern.eventmode.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,38 +172,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConstructorCollector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.reflect.ConstructorCollector" />
+    <configuration name="ProxyDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo.pattern.proxy.ProxyDemo" />
       <module name="simpleframework" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="demo.reflect.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="FieldCollector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.reflect.FieldCollector" />
-      <module name="simpleframework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.reflect.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MethodCollector" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="demo.reflect.MethodCollector" />
-      <module name="simpleframework" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="demo.reflect.*" />
+          <option name="PATTERN" value="demo.pattern.proxy.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -160,20 +198,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AspectListExecutorTest.sortTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simpleframework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.simpleframework.aop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.simpleframework.aop" />
+      <option name="MAIN_CLASS_NAME" value="org.simpleframework.aop.AspectListExecutorTest" />
+      <option name="METHOD_NAME" value="sortTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AspectWeaverTest.doAopTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="simpleframework" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.simpleframework.aop.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="org.simpleframework.aop" />
+      <option name="MAIN_CLASS_NAME" value="org.simpleframework.aop.AspectWeaverTest" />
+      <option name="METHOD_NAME" value="doAopTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="Application.AnnotationDemo" />
-      <item itemvalue="Application.AnnotationParser" />
-      <item itemvalue="Application.ConstructorCollector" />
-      <item itemvalue="Application.FieldCollector" />
-      <item itemvalue="Application.MethodCollector" />
+      <item itemvalue="Application.CallbackDemo" />
+      <item itemvalue="Application.EventModeDemo" />
+      <item itemvalue="Application.ProxyDemo" />
+      <item itemvalue="JUnit.AspectListExecutorTest.sortTest" />
+      <item itemvalue="JUnit.AspectWeaverTest.doAopTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AnnotationParser" />
-        <item itemvalue="Application.AnnotationDemo" />
-        <item itemvalue="Application.MethodCollector" />
-        <item itemvalue="Application.FieldCollector" />
-        <item itemvalue="Application.ConstructorCollector" />
+        <item itemvalue="JUnit.AspectWeaverTest.doAopTest" />
+        <item itemvalue="JUnit.AspectListExecutorTest.sortTest" />
+        <item itemvalue="Application.ProxyDemo" />
+        <item itemvalue="Application.EventModeDemo" />
+        <item itemvalue="Application.CallbackDemo" />
       </list>
     </recent_temporary>
   </component>
@@ -186,7 +256,15 @@
       <option name="presentableId" value="Default" />
       <updated>1655456046302</updated>
       <workItem from="1655456048373" duration="11156000" />
-      <workItem from="1655535884529" duration="3981000" />
+      <workItem from="1655535884529" duration="5972000" />
+      <workItem from="1655557074426" duration="8579000" />
+      <workItem from="1655566264706" duration="743000" />
+      <workItem from="1655621148089" duration="4092000" />
+      <workItem from="1655625296628" duration="15669000" />
+      <workItem from="1655689310396" duration="5414000" />
+      <workItem from="1655722811801" duration="9817000" />
+      <workItem from="1655774121846" duration="5114000" />
+      <workItem from="1655779390175" duration="15366000" />
     </task>
     <servers />
   </component>
@@ -210,33 +288,122 @@
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="176" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655539241598" />
-    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1655475851065">
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser" timestamp="1655796404045">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655475851065" />
+    <state x="526" y="166" key="#com.intellij.ide.util.MemberChooser/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655796404045" />
+    <state x="347" y="373" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1655639595696">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="347" y="373" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655639595696" />
+    <state x="488" y="328" width="465" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1655639735146">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="488" y="328" width="465" height="272" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655639735146" />
+    <state x="505" y="341" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages" timestamp="1655639602849">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="505" y="341" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.packages/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655639602849" />
+    <state x="476" y="163" key="#xdebugger.evaluate" timestamp="1655559421848">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="476" y="163" key="#xdebugger.evaluate/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655559421848" />
     <state x="93" y="93" width="1255" height="735" key="DiffContextDialog" timestamp="1655479545106">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
     <state x="93" y="93" width="1255" height="735" key="DiffContextDialog/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655479545106" />
-    <state width="1397" height="241" key="GridCell.Tab.0.bottom" timestamp="1655539365231">
+    <state x="501" y="215" key="FileChooserDialogImpl" timestamp="1655560930846">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="241" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655539365231" />
-    <state width="1397" height="241" key="GridCell.Tab.0.center" timestamp="1655539365231">
+    <state x="501" y="215" key="FileChooserDialogImpl/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655560930846" />
+    <state width="1397" height="241" key="GridCell.Tab.0.bottom" timestamp="1655796795153">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="241" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655539365231" />
-    <state width="1397" height="241" key="GridCell.Tab.0.left" timestamp="1655539365231">
+    <state width="1397" height="241" key="GridCell.Tab.0.bottom/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655796795153" />
+    <state width="1397" height="241" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1655704021917" />
+    <state width="1397" height="241" key="GridCell.Tab.0.center" timestamp="1655796795153">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="241" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655539365231" />
-    <state width="1397" height="241" key="GridCell.Tab.0.right" timestamp="1655539365231">
+    <state width="1397" height="241" key="GridCell.Tab.0.center/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655796795153" />
+    <state width="1397" height="241" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1655704021917" />
+    <state width="1397" height="241" key="GridCell.Tab.0.left" timestamp="1655796795153">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1397" height="241" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655539365231" />
-    <state x="383" y="195" width="672" height="678" key="search.everywhere.popup" timestamp="1655479921829">
+    <state width="1397" height="241" key="GridCell.Tab.0.left/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655796795153" />
+    <state width="1397" height="241" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1655704021917" />
+    <state width="1397" height="241" key="GridCell.Tab.0.right" timestamp="1655796795153">
       <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="383" y="195" width="672" height="678" key="search.everywhere.popup/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655479921829" />
+    <state width="1397" height="241" key="GridCell.Tab.0.right/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655796795153" />
+    <state width="1397" height="241" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1655704021917" />
+    <state width="1397" height="300" key="GridCell.Tab.1.bottom" timestamp="1655652901053">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.1.bottom/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655652901053" />
+    <state width="1397" height="300" key="GridCell.Tab.1.center" timestamp="1655652901052">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.1.center/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655652901052" />
+    <state width="1397" height="300" key="GridCell.Tab.1.left" timestamp="1655652901052">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.1.left/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655652901052" />
+    <state width="1397" height="300" key="GridCell.Tab.1.right" timestamp="1655652901053">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="1397" height="300" key="GridCell.Tab.1.right/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655652901053" />
+    <state x="222" y="105" key="SettingsEditor" timestamp="1655621163585">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="222" y="105" key="SettingsEditor/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655621163585" />
+    <state x="377" y="211" key="run.anything.popup" timestamp="1655565435517">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="377" y="211" key="run.anything.popup/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655565435517" />
+    <state x="383" y="195" width="672" height="678" key="search.everywhere.popup" timestamp="1655795698912">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="383" y="195" width="672" height="678" key="search.everywhere.popup/0.0.1440.920/2160.0.2048.1112@0.0.1440.920" timestamp="1655795698912" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/simpleframework/util/ClassUtil.java</url>
+          <line>31</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/simpleframework/core/BeanContainer.java</url>
+          <line>176</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/simpleframework/core/BeanContainer.java</url>
+          <line>188</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/simpleframework/inject/DependencyInjector.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/simpleframework/inject/DependencyInjectorTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/org/simpleframework/inject/DependencyInjectorTest.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/org/simpleframework/inject/DependencyInjector.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

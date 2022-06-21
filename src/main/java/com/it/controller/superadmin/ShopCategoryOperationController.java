@@ -3,6 +3,8 @@ package com.it.controller.superadmin;
 import com.it.entity.bo.ShopCategory;
 import com.it.entity.dto.Result;
 import com.it.service.solo.ShopCategoryService;
+import org.simpleframework.core.annotation.Controller;
+import org.simpleframework.inject.annotation.Autowired;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -14,7 +16,9 @@ import java.util.List;
  * @Author: Du
  * @Date: 2022/6/17
  */
+@Controller
 public class ShopCategoryOperationController {
+    @Autowired
     private ShopCategoryService shopCategoryService;
 
     public Result<Boolean> addShopCategory(HttpServletRequest req, HttpServletResponse resp){

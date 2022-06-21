@@ -248,6 +248,10 @@
             是否允许提前暴漏
             填充Bean属性
             initializeBean
+                如果实现Aware接口，则设置
+                初始化前操作
+                初始化
+                初始化后操作
             注册相关销毁逻辑
             返回创建好的实例
         applyMergeedBeanDefinitionProcessors：处理@Autowired以及@Value注解
@@ -255,3 +259,12 @@
     AutowiredAnnotationBeanPostProcessor：postProcessProperties-->Autowired的依赖注入逻辑
     DefaultListableBeanFactory:doResolveDependency：依赖解析
     DependencyDescriptor：injectionPoint：创建依赖实例
+    
+##AOP
+    
+    切面Aspect:将横切关注点逻辑进行模块化封装的实体对象
+    通知Advice：方法，同时定了织入逻辑的时机
+    连接点Jointpoint，允许使用Advice的地方
+    SpringAOP默认只支持方法级别的Jointpoint
+    切入点Pointcut：定义一系列规定对Jointpoint进行筛选
+    目标对象Target：符合Pointcut条件，要被织入横切逻辑的对象
